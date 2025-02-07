@@ -1,4 +1,91 @@
-<p>Welcome to my portfolio</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#projects" class="dropbtn">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="#project1">Livestock water pressure model</a>
+                        <a href="#project2">Table Positions Calculator</a>
+                        <a href="#project3">Image prompt generator</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<p>Here is a report I did on the water pressure of an irrigation system on a pig farm:</p>
-<a href="farm_irrigation_report.pdf" download="download">Download</a>
+    <section id="home">
+        <div class="welcome-animation">
+            <div class="mountain"></div>
+            <h1>Welcome to My Portfolio</h1>
+        </div>
+        <p>Hi, I'm Finlay Aiken, a developer enthusiastic creating innovative projects and problem solving. Explore my work below!</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <article id="project1">
+            <h3>Livestock water pressure model</h3>
+            <h4>What is it</h4>
+            <p>A model of the water pressure in a farm I worked in. I used EPANET model to estimate the workable range of pressure
+                and highlight areas where the pressure is too high or low.
+            </p>
+            <h4>What I learned</h4>
+            <ul>
+                <li>Use of LIDAR data and mapping software to create a custom topographic map. I used QGis and Google Earth.</li>
+                <li>Adapting EPANET to modelling farm irrigation which is not what it's usually used for</li>
+            </ul>
+            <a href="farm_irrigation_report.pdf" download="download">Download pdf</a>
+        </article>
+        <article id="project2">
+            <h3>Table Positions Calculator</h3>
+            <h4>What is it</h4>
+            <p>App that calculates the positions of workers in a table. It solves a puzzle that came to me while working at a table in
+                rotating patterns
+            </p>
+            <h4>What I learned</h4>
+            <ul>
+                <li>Serving a web application with the use of a database</li>
+                <li>Image manipulation and displaying images on webpage while keeping the app light</li>
+            </ul>
+            <p>
+                <a href="https://github.com/liathach7/TablePositions">Click here</a> to see the source code
+            </p>
+        </article>
+        <article id="project3">
+            <h3>Image prompt generator</h3>
+            <h4>What is it</h4>
+            <p>App that takes a prompt from a user and crawls a number of related news articles for names of people. It picks names
+                at random and displays an image of the person.
+            </p>
+            <h4>What I learned</h4>
+            <ul>
+                <li>Develop a bespoke way to extract useful info from webpage sources, in this case names</li>
+                <li>Serving a web application through Docker and Nginx</li>
+            </ul>
+            <p>
+               <a href="http://liathach7.site/">Click here</a> to see the live web application. Still in development 
+            </p>
+        </article>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:finlayaiken@gmail.com">finlayaiken@gmail.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Finlay Aiken. All rights reserved.</p>
+    </footer>
+</body>
+</html>
